@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html  lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/Acontactus.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+    <title>Contact Us</title>
+</head>
+
+<body>
+   
+
+        <%- include('../partials/Anavbar') %>
+        <script>
+  
+            jQuery(function($){
+    
+                var $navbar=$('.header');
+                $(window).scroll(function(event){
+                    var $current=$(this).scrollTop();
+    
+                    if($current >330){
+                        $navbar.addClass('navbar-color');
+                    }else{
+                        $navbar.removeClass('navbar-color');
+                    }
+    
+                });
+            });
+    
+        </script>
+    <section>
+        <div class="bodyimage">
+            <img src="/images/ss.jpg" alt="">
+        </div>
+    </section>
+    
+
+    <section class="contact">
+        <div class="content">
+
+            <h2>اتصل بنا</h2>
+            <p dir="rtl">إذا كان لديك سؤال أو تحتاج إلى مزيد من المعلومات ، فلا تتردد في الاتصال بنا باستخدام النموذج أدناه. سنكون سعداء للمساعدة.
+            </p>
+            <div class="containers">
+                <div>
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.7197800891777!2d31.278507274705742!3d30.01620161990986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145838b6a078df9d%3A0xc581fce14bb28552!2s3%20Al%20Nafoura%20Sq.%2C%20Al%20Abageyah%2C%20El%20Mokattam%2C%20Cairo%20Governorate%204412023!5e0!3m2!1sen!2seg!4v1691798721851!5m2!1sen!2seg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+                            </div>
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="ri-map-pin-line"></i></div>
+                        <div class="text">
+                            <h3>العنوان</h3>
+                            <p dir="rtl"><b>3 ميدان  النافوره</b>,
+                                <br>3 ميدان النافورة – المقطم – القاهره – مصر <br> 4412023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="ri-mail-open-line"></i></div>
+                        <div class="text">
+                            <h3>البريد الالكتروني</h3>
+                            <p>
+                                <a href="mailto:info@dperformance.org">info@dperformance.org</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="ri-phone-line"></i></div>
+                        <div class="text">
+                            <h3>الهاتف</h3>
+                            <p>
+                                0228452245
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <h2 dir="rtl" style="font-weight: 400;font-size: 27;">اكتب لنا رسالتك</h2>
+                    <form  id="contactForm">
+
+                        <div class="inputBox">
+                            <input type="text" name="name"  id="name">
+                            <span>الاسم</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="email" id="email">
+                            <span>البريد الالكتروني</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="phone" id="phone" >
+                            <span>الرقم</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="address" id="address">
+                            <span>العنوان</span>
+                        </div>
+                           <div class="inputBox">
+                            <input type="text" name="company"  id="company">
+                            <span>الشركه</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea  name="req" id="req"></textarea>
+                            <span>الرساله</span>
+                        </div>
+                        <div id="error"> </div>
+                        <div class="inputBox">
+                            <input type="submit" value="SEND">
+                        </div>
+                        
+                    </form>
+                    <script src="js/Acontactus.js"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer -->
+    <%- include('../partials/Afooter') %>
+    
+</body>
+
+</html>

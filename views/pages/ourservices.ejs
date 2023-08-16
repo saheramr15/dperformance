@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/services.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>Our services-Data performance</title>
+
+</head>
+
+<body>
+
+    <%- include('../partials/navbar') %>
+
+    <script>
+  
+        jQuery(function($){
+
+            var $navbar=$('.header');
+            $(window).scroll(function(event){
+                var $current=$(this).scrollTop();
+
+                if($current >250){
+                    $navbar.addClass('navbar-color');
+                }else{
+                    $navbar.removeClass('navbar-color');
+                }
+
+            });
+        });
+
+    </script>
+
+    <section>
+        <div class="bodyimage">
+         <img src="/images/pexels-pixabay-273209.jpg" alt="">
+        </div>
+    </section>
+
+
+    <h1 class="ourserv">Our services</h1>
+    <hr class="ourservhr">
+
+
+    <section class="container">
+
+        <div class="box">
+            <img class="imgg" src="/images/business.jpg">
+
+            <div class="items">
+                <div class="prodetails">
+                    <p>Financial & Operational Consultations</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="box">
+            <img class="imgg" src="/images/mcc.jpg">
+
+            <div class="items">
+                <div class="prodetails">
+                    <p>Marketing Activates</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="box">
+             
+            <img class="imgg" src="/images/img3.jpg"  >
+            <div class="items">
+                <div class="prodetails">
+                    <p>Provide Business Process & Workflow</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="box">
+             
+            <img class="imgg" src="/images/erp.jpg"  >
+            <div class="items">
+                <div class="prodetails">
+                    <p>Provide Automated ERP</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="box">
+             
+            <img class="imgg" src="/images/businessplann.jpg"  >
+            <div class="items">
+                <div class="prodetails">
+                    <p>Provide Business Plan</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="box">
+             
+            <img class="imgg" src="/images/mc.jpg"  >
+            <div class="items">
+                <div class="prodetails">
+                    <p>Marketing Planning Consultations</p>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="box">
+             
+            <img class="imgg" src="/images/financialanalysis.jpeg" alt="">
+            <div class="items">
+                <div class="prodetails">
+                    <p>Generate Financial Analysis</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="box">
+             
+            <img class="imgg" src="/images/data.jpg" alt="" >
+            <div class="items">
+                <div class="prodetails">
+                    <p>Data Consolidation For Group Of Companies</p>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+ 
+
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+    
+</body>
+
+</html>

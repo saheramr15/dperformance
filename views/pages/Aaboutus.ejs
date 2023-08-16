@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+   
+    <link rel="stylesheet" type="text/css" href="/css/Aaboutus.css">
+    <!-- to access font awesome cdn icons -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <title>About Us</title>
+</head>
+
+<body>
+    <%- include('../partials/Anavbar') %>
+    <script>
+  
+        jQuery(function($){
+
+            var $navbar=$('.header');
+            $(window).scroll(function(event){
+                var $current=$(this).scrollTop();
+
+                if($current >190){
+                    $navbar.addClass('navbar-color');
+                }else{
+                    $navbar.removeClass('navbar-color');
+                }
+
+            });
+        });
+
+    </script>
+
+    <section>
+        <div class="bodyimage">
+         <img src="/images/pexels-adrien-olichon-4534504.jpg" alt="">
+        </div>
+    </section>
+
+
+    <div class="ad1-container reveal">
+        <div class="ad1-img">
+            <img src="/images/Untitled design (4).png">
+        </div>
+        <div class="ad1-text">
+            <h1 dir="rtl">داتا بيرفورمانس لتحويل الاعمال</h1>
+            <p dir="rtl">تأسست في عام 2013 من قبل مجموعة من المنافسين من مختلف المجالات ( المالية ، التشغيل والتكنولوجيا) لتكون شريكًا تجاريًا حقيقيًا يدعم تحويل أداء الأعمال للتكيف مع احتياجات / اتجاهات السوق العالمية.
+            </p>
+        </div>
+    </div>
+
+    <!-- <div class="ad2-container reveal">
+        
+        <div class="ad2-text">
+            <h1 dir="rtl">داتا بيرفورمانس لتحويل الاعمال</h1>
+            <p>Established in 2013 By a Group of Challengers from Different Fields (Marcum, Finance,
+                 Operation and Technology) To Be a Real Business Partner That Support in Transforming the Business Performance to Adapt with The Global Market Needs/Trends.
+            </p>
+          
+        </div>
+        <div class="ad2-img">
+            <img src="/images/Untitled design (4).png">
+        </div>
+
+    </div> -->
+
+    <div class="container">
+
+        <div class="box">
+            <span class="material-symbols-outlined">
+                visibility
+            </span>
+            <h3>مهمتنا</h3>
+            <p dir="rtl">لإنشاء حلول أعمال متكاملة ومستدامة وفعالة باستخدام أحدث أدوات العمل لتحقيق أهداف شركائنا. <br>يجب تصميم عمليات الأعمال لدينا لخدمة عملائنا بسهولة وبطريقة مستجيبة.</p>
+        </div>
+        <div class="box">
+            <span class="material-symbols-outlined">
+                my_location
+                </span>
+            <h3 dir="rtl">رؤيتنا</h3>
+            <p dir="rtl">أن نكون أحد مقدمي الخدمات الأكثر موثوقية في تحول الأعمال للشركات في منطقة الشرق الأوسط وشمال إفريقيا.</p>
+        </div>
+
+
+
+
+    </div>
+
+ 
+        <h1 class="achivments" dir="rtl">إنجازاتنا</h1>
+        <div class="container2">
+            <div class="box">
+                <h1> 600+</h1>
+                <p >  عملاء قاموا بزيارة الموقع </p>  
+            </div>
+            <div class="box">
+                <h1> 20+ </h1>
+                <p dir="rtl">   مشاريع ناجحة </p>  
+            </div>
+            <div class="box">
+                <h1> 100% </h1>
+                <p dir="rtl">
+                    رضا العملاء </p>  
+            </div>
+          
+        </div>
+
+
+
+        <!-- footer -->
+        <%- include('../partials/Afooter') %>
+         
+</body>
+
+</html>

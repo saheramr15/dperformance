@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Aourclients.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>Our Clients-Data performance</title>
+</head>
+<body>
+    <%- include('../partials/Anavbar') %>
+    <script>
+  
+        jQuery(function($){
+
+            var $navbar=$('.header');
+            $(window).scroll(function(event){
+                var $current=$(this).scrollTop();
+
+                if($current >190){
+                    $navbar.addClass('navbar-color');
+                }else{
+                    $navbar.removeClass('navbar-color');
+                }
+
+            });
+        });
+
+    </script>
+
+
+            <section>
+                <div class="bodyimage">
+                <img src="/images/pexels-adrien-olichon-4534504.jpg" alt="">
+                </div>
+            </section>
+
+
+  
+    
+        <p id="oc">Our Clients</p> 
+        <div class="container">
+            
+            <div class="box">
+                <img src="images/swedy.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/swedy2.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/track.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/comp3.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/gomla.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/astico.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/alpha.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/binhealth.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/gled.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/egy.png" alt="">
+            </div>
+          
+            <div class="box">
+                <img src="images/ilnero.png" alt="">
+            </div>
+        </div>
+
+     
+       
+<%- include('../partials/Afooter') %>
+
+</body>
+</html>

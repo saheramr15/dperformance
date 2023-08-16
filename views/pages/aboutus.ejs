@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+   
+    <link rel="stylesheet" type="text/css" href="/css/aboutus.css">
+    <!-- to access font awesome cdn icons -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <title>About Us</title>
+</head>
+
+<body>
+    <%- include('../partials/navbar') %>
+    <script>
+  
+        jQuery(function($){
+
+            var $navbar=$('.header');
+            $(window).scroll(function(event){
+                var $current=$(this).scrollTop();
+
+                if($current >190){
+                    $navbar.addClass('navbar-color');
+                }else{
+                    $navbar.removeClass('navbar-color');
+                }
+
+            });
+        });
+
+    </script>
+
+    <section>
+        <div class="bodyimage">
+         <img src="/images/pexels-adrien-olichon-4534504.jpg" alt="">
+        </div>
+    </section>
+ 
+
+    <div class="ad2-container reveal">
+        <div class="ad2-text">
+            <h1>Data Performance for Business Transformation</h1>
+            <p>Established in 2013 By a Group of Challengers from Different Fields (Marcum, Finance,
+                 Operation and Technology) To Be a Real Business Partner That Support in Transforming the Business Performance to Adapt with The Global Market Needs/Trends.
+            </p>
+          
+        </div>
+        <div class="ad2-img">
+            <img src="/images/Untitled design (4).png">
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="box">
+            <span class="material-symbols-outlined">
+                visibility
+            </span>
+            <h3>Our Vision</h3>
+            <p>To Be One of the Most Reliable Service Providers in Business Transformation for Companies in The MENA Region.</p>
+        </div>
+        <div class="box">
+            <span class="material-symbols-outlined">
+                my_location
+                </span>
+            <h3>Our Mission</h3>
+            <p>To Create Integrated, Sustainable and Efficient Business Solutions Using the Latest Business Tools to Achieve Our Partners Goals.
+                Our Business Processes Must Be Designed to Serve Our Customers Easily and in a Responsive Manner.</p>
+        </div>
+
+
+
+
+    </div>
+
+ 
+        <h1 class="achivments">Our Achivments</h1>
+        <div class="container2">
+            <div class="box">
+                <h1> 100% </h1>
+                <p> Client Satisfaction </p>  
+            </div>
+            <div class="box">
+                <h1> 20+ </h1>
+                <p>   Successful Projects </p>  
+            </div>
+            <div class="box">
+                <h1> 600+</h1>
+                <p> Client Site Visits </p>  
+            </div>
+        </div>
+
+
+
+        <!-- footer -->
+        <%- include('../partials/footer') %>
+         
+</body>
+
+</html>
